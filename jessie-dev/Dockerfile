@@ -1,7 +1,7 @@
 FROM baseboxorg/base-debian:jessie
 
 RUN apt-get -q update
-RUN apt-get install -y -q bash-completion && apt-get clean
+RUN apt-get install -y -q wget git curl bash-completion && apt-get clean
 RUN apt-get install -y -q zsh tmux git vim tig lftp tree moreutils realpath p7zip-full && apt-get clean
 ## Devel
 #RUN apt-get install -y -q build-essential manpages && apt-get clean
