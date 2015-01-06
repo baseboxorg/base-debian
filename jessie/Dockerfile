@@ -2,7 +2,7 @@ FROM debian:jessie
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get -y install git curl wget locales nano
+RUN apt-get update && apt-get -y install locales
 
 RUN dpkg-reconfigure locales && \
   locale-gen C.UTF-8 && \
