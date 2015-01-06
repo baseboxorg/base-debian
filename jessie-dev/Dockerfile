@@ -1,4 +1,4 @@
-FROM baseboxorg:base-debian:jessie
+FROM baseboxorg/base-debian:jessie
 
 RUN apt-get -q update
 RUN apt-get install -y -q bash-completion && apt-get clean
